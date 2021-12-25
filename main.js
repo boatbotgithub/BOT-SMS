@@ -27,12 +27,24 @@ client.on('ready', () => {
 client.on('message', async message => {
     const chanelContents = client.channels.cache.find(channel => channel.id =='923910842263683072');
     const contents = message.content
-
+    if(contents.length >= 150) return message.reply("ข้อความยากเกินไป")
     const img = [
-        "https://i.pinimg.com/originals/09/00/2a/09002a316abfb4f7b515d371ec192d74.gif",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXKz081HRmpjOdxfPWuqnAzV8d77ONbG7bJ4JRh7CLjVFc402NCnIvZY6Ma2RVUtb-5U&usqp=CAU",
-        "https://f.ptcdn.info/333/055/000/p1gt029f4UzXdJ7tJWR-o.gif",
-        "https://f.ptcdn.info/334/055/000/p1gukg6i7aOXV2AZApm-o.gif"
+        "https://cdn.discordapp.com/attachments/884013105452032050/924216997020057600/HP-Xmas00.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217019178577940/HP-Xmas01.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217043958509608/HP-Xmas02.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217069300490250/HP-Xmas03.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217085582790726/HP-Xmas04.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217117757308928/HP-Xmas05.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217138481352764/HP-Xmas06.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217149646581760/HP-Xmas07.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217174917255188/HP-Xmas08.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217192910839858/HP-Xmas09.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217219318165514/HP-Xmas10.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217232471490600/HP-Xmas11.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217243821297724/HP-Xmas12.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217294752735262/HP-Xmas13.png",
+        "https://cdn.discordapp.com/attachments/884013105452032050/924217320241508362/HP-Xmas14.png"
+       
     ]
 
     var item = img[Math.floor(Math.random()* img.length)];
